@@ -1,0 +1,86 @@
+{
+  "model": "VAE (MLP, Kingma & Welling 2014)",
+  "params": 652824,
+  "epochs": 15,
+  "latent_dim": 20,
+  "final_test_neg_elbo_nats": 101.06906251220703,
+  "iwae_loglik_nats_k50": -96.86740684509277,
+  "train_seconds": 443.7,
+  "history": [
+    {
+      "epoch": 1,
+      "train_neg_elbo": 164.31186501592651,
+      "test_neg_elbo": 125.91567961425781
+    },
+    {
+      "epoch": 2,
+      "train_neg_elbo": 119.57812995584602,
+      "test_neg_elbo": 113.34785269775391
+    },
+    {
+      "epoch": 3,
+      "train_neg_elbo": 112.18345133463542,
+      "test_neg_elbo": 109.06225029296876
+    },
+    {
+      "epoch": 4,
+      "train_neg_elbo": 109.02062768202562,
+      "test_neg_elbo": 106.90539151611328
+    },
+    {
+      "epoch": 5,
+      "train_neg_elbo": 107.17252988896819,
+      "test_neg_elbo": 105.39619167480468
+    },
+    {
+      "epoch": 6,
+      "train_neg_elbo": 105.88275580120902,
+      "test_neg_elbo": 104.47806407470704
+    },
+    {
+      "epoch": 7,
+      "train_neg_elbo": 104.91618123828856,
+      "test_neg_elbo": 103.55388208007813
+    },
+    {
+      "epoch": 8,
+      "train_neg_elbo": 104.21682480054024,
+      "test_neg_elbo": 103.0263517578125
+    },
+    {
+      "epoch": 9,
+      "train_neg_elbo": 103.59117428054158,
+      "test_neg_elbo": 102.48050714111328
+    },
+    {
+      "epoch": 10,
+      "train_neg_elbo": 103.12881367023175,
+      "test_neg_elbo": 102.29001496582032
+    },
+    {
+      "epoch": 11,
+      "train_neg_elbo": 102.69753508282523,
+      "test_neg_elbo": 101.95827305908203
+    },
+    {
+      "epoch": 12,
+      "train_neg_elbo": 102.40068277538332,
+      "test_neg_elbo": 101.66125944824219
+    },
+    {
+      "epoch": 13,
+      "train_neg_elbo": 102.09336980183919,
+      "test_neg_elbo": 101.44521674804687
+    },
+    {
+      "epoch": 14,
+      "train_neg_elbo": 101.81632035410303,
+      "test_neg_elbo": 101.10817767333984
+    },
+    {
+      "epoch": 15,
+      "train_neg_elbo": 101.59194238776834,
+      "test_neg_elbo": 101.06906251220703
+    }
+  ]
+}
