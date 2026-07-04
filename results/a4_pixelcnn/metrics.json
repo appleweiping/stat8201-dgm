@@ -1,0 +1,40 @@
+{
+  "model": "PixelCNN (van den Oord et al. 2016)",
+  "params": 74625,
+  "epochs": 6,
+  "final_test_nll_nats": 96.36285251464844,
+  "final_test_bits_per_dim": 0.17732424674591565,
+  "train_seconds": 2011.9,
+  "history": [
+    {
+      "epoch": 1,
+      "train_nll_nats": 163.65772594549716,
+      "test_nll_nats": 101.61162745361328
+    },
+    {
+      "epoch": 2,
+      "train_nll_nats": 100.33608162708772,
+      "test_nll_nats": 100.6982918334961
+    },
+    {
+      "epoch": 3,
+      "train_nll_nats": 98.56115947625575,
+      "test_nll_nats": 97.47926163330078
+    },
+    {
+      "epoch": 4,
+      "train_nll_nats": 97.71967168954703,
+      "test_nll_nats": 96.72153901367187
+    },
+    {
+      "epoch": 5,
+      "train_nll_nats": 96.94650097382375,
+      "test_nll_nats": 96.29091075439453
+    },
+    {
+      "epoch": 6,
+      "train_nll_nats": 96.54556342882988,
+      "test_nll_nats": 96.36285251464844
+    }
+  ]
+}

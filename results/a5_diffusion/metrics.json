@@ -1,0 +1,70 @@
+{
+  "model": "DDPM (Ho et al. 2020), U-Net eps-predictor",
+  "params": 284193,
+  "timesteps": 200,
+  "epochs": 15,
+  "final_train_mse": 0.05819451995193958,
+  "train_seconds": 3167.6,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 0.22798399273783732
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.10451133482349224
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.08488152610758941
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.07752698530944493
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.07312644370950949
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.07022450463129924
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.0672004980345567
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.06523401433458695
+    },
+    {
+      "epoch": 9,
+      "train_mse": 0.06389617435156535
+    },
+    {
+      "epoch": 10,
+      "train_mse": 0.06306744457628483
+    },
+    {
+      "epoch": 11,
+      "train_mse": 0.06143998139752792
+    },
+    {
+      "epoch": 12,
+      "train_mse": 0.06065791475180632
+    },
+    {
+      "epoch": 13,
+      "train_mse": 0.059592350553243585
+    },
+    {
+      "epoch": 14,
+      "train_mse": 0.05901213057148151
+    },
+    {
+      "epoch": 15,
+      "train_mse": 0.05819451995193958
+    }
+  ]
+}
