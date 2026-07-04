@@ -70,12 +70,19 @@ class AffineCoupling(nn.Module):
         return x
 
 
+def _spatial_checkerboard(h: int = 28, w: int = 28) -> torch.Tensor:
+    """2D checkerboard mask flattened to (h*w,). Respects image structure, unlike a
+    simple index-parity mask, which gives RealNVP much better image samples."""
+    yy, xx = torch.meshgrid(torch.arange(h), torch.arange(w), indexing="ij")
+    return ((yy + xx) % 2).reshape(-1)
+
+
 class RealNVP(nn.Module):
     def __init__(self, dim: int = 784, n_coupling: int = 6, hidden: int = 256):
         super().__init__()
         self.dim = dim
+        base = _spatial_checkerboard(28, 28) if dim == 784 else (torch.arange(dim) % 2)
         masks = []
-        base = torch.arange(dim) % 2  # checkerboard-ish alternating mask
         for i in range(n_coupling):
             masks.append(base if i % 2 == 0 else 1 - base)
         self.layers = nn.ModuleList(
