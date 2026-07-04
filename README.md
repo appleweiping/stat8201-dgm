@@ -49,6 +49,11 @@ not an error — the Jacobian is checked against autograd in `tests/`.
 
 VAE reconstructions (top row = inputs, bottom row = model): [`results/a1_vae/reconstructions.png`](results/a1_vae/reconstructions.png).
 
+The **Wasserstein GAN with gradient penalty** was also trained (the "Wasserstein GAN" week
+of the seminar): the critic loss `E_data[f] − E_G[f]` — a direct estimate of the negative
+Wasserstein distance — tightens from **−9.5 → −1.7** as the generator improves. Samples and
+metrics: [`results/a3_gan_wgan/`](results/a3_gan_wgan/).
+
 ## Implemented assignments
 
 - [x] **a1 — Variational Autoencoder** — MLP VAE, closed-form Gaussian KL, reparameterization trick, IWAE log-likelihood evaluation.
